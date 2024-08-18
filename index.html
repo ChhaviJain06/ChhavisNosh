@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHHAVI'S NOSH</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <div class="website-name" onclick=" window.location.href='index.html'">
+          CHHAVI'S NOSH
+        </div>
+      </div>
+      <div class="search-container">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search recipes..."
+        />
+        <button class="search-button" onclick="searchRecipe()">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="theme-toggle" onclick="toggleTheme()">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <h2 id="results-heading" class="favorites-heading">My Favorites</h2>
+
+    <div id="recipe-container" class="container"></div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <a href="mailto:jainchhavi006@gmail.com"
+            ><i class="fas fa-envelope"></i> jainchhavi006@gmail.com</a
+          >
+          <a href="https://www.instagram.com/chhavis_nosh/" target="_blank"
+            ><i class="fab fa-instagram"></i> @chhavisnosh</a
+          >
+          <a href="https://www.youtube.com/@Chhavis_Nosh" target="_blank"
+            ><i class="fab fa-youtube"></i> Chhavi's Nosh</a
+          >
+        </div>
+        <div class="footer-section">
+          <h3>Our Location</h3>
+          <p>Udaipur, Rajasthan, India</p>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58014.85195201609!2d73.65304214631695!3d24.585485226485766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e56550a14411%3A0xdbd8c28455b868b0!2sUdaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1661234567890!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">© 2024 CHHAVI'S NOSH. All rights reserved.</div>
+    </footer>
+
+    <script src="./data/favorites.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
